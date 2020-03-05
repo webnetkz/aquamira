@@ -1,0 +1,111 @@
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .homePage {
+        height: 100vh;
+        width: 100vw;
+        background: url('bgPC.jpg') 50% 60% no-repeat;
+        background-size: cover;
+    }
+    .logoHeader {
+        width: 12vw;
+        margin-left: 44vw;
+        margin-top: 3vh;
+    }
+    .containerIcons {
+        position: absolute;
+        left: 10vw;
+        top: 25vh;
+        width: 10vw;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .iconsItem {
+        width: 10vw;
+        transition-duration: 900ms;
+    }
+    .iconsItem:hover {
+        transform: rotateY(360deg);
+    }
+    .contactBlock {
+        position: absolute;
+        top: 25vh;
+        left: 25vw;
+        width: 20vw;
+        height: 65vh;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .itemContact {
+        width: 100%;
+        height: 25vh;
+        background-color: rgba(22, 22, 22, 0.1);
+        border-radius: 20px;
+        padding: 15px;
+        box-sizing: border-box;
+        transition-duration: 600ms;
+    }
+    .itemContact:hover {
+        background-color: rgba(22, 22, 22, 0.4);
+    }
+    .pH {
+        color: white;
+        text-align: center;
+        font-size: 1.2em;
+        font-family: sans-serif;
+    }
+    .btnHref {
+        color: white;
+        text-align: center;
+        font-size: 1.2em;
+        font-family: sans-serif;
+        text-decoration: none;
+        display: block;
+        padding: 12px;
+        border-radius: 20px;
+        background-color: white;
+        color: rgb(24, 19, 150);
+        transition-duration: 600ms;
+        margin-bottom: 5px;
+    }
+    .btnHref:hover {
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+</style>
+<div class="homePage">
+
+
+
+    <a href="https://aquamira-dostavka.kz">
+        <img src="aquamiraLogo.png" alt="logotype aquamira" class="logoHeader">
+    </a>
+    <div class="containerIcons">
+        <img src="one.png" alt="icons" class="iconsItem">
+        <img src="two.png" alt="icons" class="iconsItem">
+        <img src="three.png" alt="icons" class="iconsItem">
+    </div>
+    <div class="contactBlock">
+        <div class="itemContact" style="height: 32vh;">
+            <p class="pH">Заказать воду Aquamira по телефону</p>
+            <a href="tel:+7(727) 296 02 66" class="btnHref">+7(727) 296 02 66</a>
+            <a href="tel:+7(727) 296 02 66" class="btnHref">+7(727) 296 02 66</a>
+        </div>
+        <div class="itemContact">
+            <p class="pH">Заказажи доставку воды Aquamira в два клика</p>
+            <a href="#" class="btnHref">ЗАЯВКА</a>
+        </div>
+    </div>
+</div>
+
+
+<a href="https://aquamira-dostavka.kz" class="cart-contents menu-item-mobile-cart hidden-lg" data-toggle="modal" data-target="cart-modal" data-tab="cart">
+    <svg viewBox="0 0 20 20">
+        <use xlink:href="#basket-addtocart"></use>
+    </svg>
+</a>
